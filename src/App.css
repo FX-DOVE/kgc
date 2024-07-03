@@ -3,10 +3,10 @@
   margin: 0;
   padding: 0;
 }
-body{
-  min-width: 100%;
+/* body{
+  width: 100%;
  max-height: 100vh;
- background-image: url(./assets/bg.png);
+
  position: relative;
  display: flex;
  justify-content: center;
@@ -17,9 +17,10 @@ body{
  background-size: cover;
  background-attachment: fixed;
  background-blend-mode: soft-light;
+} */
+body{
+  position: relative;
 }
-
-
 .App{
   display: flex;
   min-height: 200px;
@@ -27,8 +28,11 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
- 
- 
+  width: 100%;
+  background-image: url(./assets/bg.png);
+
+ margin: auto;
+
 }
 
 .balance{
@@ -50,12 +54,22 @@ body{
   font-size: 3em;
   font-weight: 800;
 }
-
+.coinTap{
+  width: 100%;
+ 
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+ 
+}
 
 .coinTap img{
-  margin-top: 7em;
+
   width: 100%;
-  height: 300px;
+  height: 100%;
   margin: auto;
   
 
@@ -95,6 +109,8 @@ margin-bottom: 1rem;
 display: flex;
 align-items: center;
 justify-content: space-between;
+position: fixed;
+bottom: 0;
 
 }
 .btn-container{
