@@ -10,14 +10,23 @@ import Task from "./assets/task.png"
 import './App.css'
 
 function App() {
+const [balance, setBalance] = useState(1000)
+ 
 
+
+
+const handleclick = () => {
+  setBalance(balance + 100)
+  console.log('balance chanced')
+}
 
   return (
     <>
     <section className="App">
     <div className="balance">
-      <img src={Small} alt=" coin balance" /> <span className="coinbalance-num">
-       100
+      <img src={Small} alt=" coin balance"  /> <span className="coinbalance-num " >
+       {balance}
+       
       </span>
 
     </div>
@@ -30,7 +39,7 @@ function App() {
       </div>
    </div>
     <div className="coinTap">
-      <img src={Coin} className='coin' alt="coin" />
+      <img src={Coin} className='coin' alt="coin"  onClick={handleclick}/>
     </div>
 
     
