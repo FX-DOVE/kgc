@@ -8,17 +8,26 @@ body{
  max-height: 100vh;
  background-image: url(./assets/bg.png);
  position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+ background-blend-mode: soft-light;
 }
 
 
 .App{
   display: flex;
-  min-height: 100px;
+  min-height: 200px;
   max-height: 100vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(./assets/bg.png);
+ 
  
 }
 
@@ -50,9 +59,19 @@ body{
 
 }
 .coinTap img{
-  margin-top: 5em;
+  margin-top: 7em;
   width: 100%;
+  
 
+
+}
+
+.coinTap img:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+ 
+ 
 
 }
 
