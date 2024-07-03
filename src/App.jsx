@@ -10,8 +10,20 @@ import Task from "./assets/task.png"
 import './App.css'
 
 function App() {
-const [balance, setBalance] = useState(1000)
- 
+  const [balance, setBalance] = useState(0);
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get('token');
+    fetch(`http://localhost:3000//start?token=${token}`)
+      .then(response => response.json())
+      .then(data => setBalance(data.balance));
+  }, []);
+
+  // ... rest of your code ...
+
+
+
 
 
 
