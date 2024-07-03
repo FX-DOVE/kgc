@@ -32,13 +32,12 @@ body{
 }
 
 .balance{
-  margin-top: 1rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5em;
-  position: fixed;
-  top: 0;
+
 }
 .balance img{
  
@@ -52,28 +51,18 @@ body{
   font-weight: 800;
 }
 
-.coinTap{
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-}
 .coinTap img{
   margin-top: 7em;
   width: 100%;
+  height: 300px;
+  margin: auto;
   
 
 
 }
 
-.coinTap img:hover{
-  transform: scale(1.1);
-  transition: 0.3s;
-  cursor: pointer;
- 
- 
 
-}
 
 .rember{
  width: 100%;

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Coin from  "./assets/coin.png"
+import Coin from  "./assets/coin.svg"
 import Small from "./assets/small-coin.png"
 import Boost from "./assets/Boost.png"
 import Tap from "./assets/tap.png"
