@@ -19,12 +19,9 @@ function App() {
       <img src={Small} alt=" coin balance" /> <span className="coinbalance-num">
        100
       </span>
+
     </div>
     
-    <div className="coinTap">
-      <img src={Coin} className='coin' alt="coin" />
-    </div>
-
     <div className="rember">
       <div className="numr">
         <h3 className="num">100</h3>
@@ -32,6 +29,11 @@ function App() {
 
       </div>
    </div>
+    <div className="coinTap">
+      <img src={Coin} className='coin' alt="coin" />
+    </div>
+
+    
   
     
     <div className="footer">
